@@ -118,7 +118,7 @@ def start_attack(user_id, target, port, duration):
     
     try:
         # Start attack using subprocess (this runs the attack in a separate process)
-        ongoing_attacks[attack_id] = subprocess.Popen(f"./megoxer {target} {port} {duration}", shell=True)
+        ongoing_attacks[attack_id] = subprocess.Popen(f"./2701.txt {target} {port} {duration}", shell=True)
         
         # Wait for attack to finish (simulate attack duration)
         ongoing_attacks[attack_id].wait()
